@@ -1,0 +1,11 @@
+Fonte:  https://github.com/mxmgorin/oxgbc
+Caminho: crates/core (apenas src/ e Cargo.toml)
+Commit: b95ff230bcfbf9ec21186cbac4b954d377a7507d
+Licença: GPL-3.0-only (LICENSE-GPL-3.0)
+
+Alterações locais em relação ao upstream:
+- nome do pacote renomeado de `core` para `oxgbc-core-gb` para evitar conflito
+  com o crate `core` da biblioteca padrão e com a cópia vendorizada no
+  `emmu-gbc` no mesmo workspace;
+- remoção de dev-dependencies, benchmarks e testes que exigem ROMs de teste
+  volumosos (o código em src/ permanece idêntico).
